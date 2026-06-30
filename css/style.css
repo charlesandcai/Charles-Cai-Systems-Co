@@ -1,1 +1,78 @@
+/**************************************
+    CHARLES & CAI SYSTEMS CO.
+    DESIGN SYSTEM
+**************************************/
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+/**************************************
+    COLORS
+**************************************/
+
+:root {
+
+    --primary: #1F3A5F;
+    --primary-light: #2B527F;
+
+    --accent: #2EC4B6;
+
+    --background: #F8FAFC;
+
+    --white: #FFFFFF;
+
+    --gray-100: #F1F5F9;
+    --gray-300: #CBD5E1;
+    --gray-500: #64748B;
+    --gray-700: #334155;
+
+    --text: #1E293B;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    --radius: 16px;
+
+}
+
+ /**************************************
+    RESET
+**************************************/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+h1,h2,h3,h4{
+
+    font-family:"Poppins",sans-serif;
+
+    color:var(--primary);
+
+}
+
+.container{
+
+    width:min(1100px,90%);
+
+    margin:auto;
+
+}
