@@ -1,51 +1,50 @@
-/**************************************
-    CHARLES & CAI SYSTEMS CO.
-    DESIGN SYSTEM
-**************************************/
+/* ===================================
+   CHARLES & CAI SYSTEMS CO.
+   Design System v1.0
+=================================== */
 
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 
-/**************************************
-    COLORS
-**************************************/
+/* ---------- CSS Variables ---------- */
 
-:root {
+:root{
 
-    --primary: #1F3A5F;
-    --primary-light: #2B527F;
+    --primary:#1F3A5F;
+    --primary-light:#2D4E78;
 
-    --accent: #2EC4B6;
+    --accent:#2EC4B6;
 
-    --background: #F8FAFC;
+    --background:#F8FAFC;
 
-    --white: #FFFFFF;
+    --white:#FFFFFF;
 
-    --gray-100: #F1F5F9;
-    --gray-300: #CBD5E1;
-    --gray-500: #64748B;
-    --gray-700: #334155;
+    --text:#1E293B;
 
-    --text: #1E293B;
+    --gray:#64748B;
+
+    --border:#E5E7EB;
+
+    --radius:18px;
 
     --shadow:
-        0 10px 30px rgba(0,0,0,.08);
-
-    --radius: 16px;
+        0 15px 40px rgba(15,23,42,.08);
 
 }
 
- /**************************************
-    RESET
-**************************************/
+/* ---------- Reset ---------- */
 
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
+}
+
+/* ---------- Base ---------- */
+
+html{
+
+    scroll-behavior:smooth;
 
 }
 
@@ -57,22 +56,110 @@ body{
 
     color:var(--text);
 
-    line-height:1.6;
+    line-height:1.7;
 
 }
 
-h1,h2,h3,h4{
+img{
 
-    font-family:"Poppins",sans-serif;
+    max-width:100%;
 
-    color:var(--primary);
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
 
 }
 
 .container{
 
-    width:min(1100px,90%);
+    width:min(1120px,90%);
 
     margin:auto;
+
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+
+    background:var(--white);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+header h2{
+
+    font-family:"Poppins",sans-serif;
+
+    color:var(--primary);
+
+    font-size:1.4rem;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+nav a{
+
+    font-weight:500;
+
+    color:var(--gray);
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+.logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo span{
+
+    font-size:.8rem;
+
+    color:var(--gray);
+
+    margin-top:2px;
 
 }
